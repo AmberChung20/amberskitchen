@@ -142,20 +142,27 @@ table {
 }
 .content{
 	margin-top: 10px;
+	margin-bottom: 10px;
 }
 .content h2{
 	font-size: 24px;
 	text-align: center;
 	color:#3D6C95;
+	display: block;
 }
 
-}
+
+
 .news{
 	margin: 0 auto;
-	max-width: 50%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 60%;
+	margin-bottom: 10px;
 }
 .news span{
 	color: red;
+	font-weight: bold;
 }
 .news th{
 	text-align: center;
@@ -166,4 +173,24 @@ table {
 }
 .news td{
 	padding: 10px 20px;
+	text-align: center;
+}
+.slogan{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	max-width: 960px;
+}
+.slogan li{
+	border:1px solid gray;
+	margin-left: 5px;
+	margin-right: 5px;
+	float: left;
+	display: block;
+}
+.slogan h3{
+	font-size: 24px;
+	font-weight: bold;
+	color: #3D6C95;
+	text-align: center;
+	padding: 10px 0px;
 }
