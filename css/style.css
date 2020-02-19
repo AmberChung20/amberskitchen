@@ -52,14 +52,14 @@ table {
 	margin: 0 auto;
 }
 .header{
-	margin-top: 10px;
-	margin-bottom: 5px;	
+	margin-top: 10px;	
 	background: #fff;
 	
 }
-.header ul{
+.menu{
 	float: right;
 	margin-top: 20px;
+	margin-bottom: 5px;
 
 }
 
@@ -72,7 +72,7 @@ table {
 }
 
 .menu li a{
-	padding: 10px 20px;
+	padding: 10px ;
 	text-decoration: none;
 	color: #3D6C95;
 	font-size: 20px;
@@ -81,19 +81,24 @@ table {
 }
 
 .menu li a:hover{
-	background: #D0E8FD;
+	border-bottom:3px solid #3D6C95; 
 }
 
 .header img{
 	margin-left: 15px;
+	float: left;
+
 }
 .clearfix{
-	float: none;
+	clear:both;
 }
-@media  (max-width:660px){
-	.menu li{
-		float:none;
-		border-bottom: 3px solid #3D6C95;		
+@media  (max-width:768px){
+	
+	
+}
+@media  (max-width:320px){
+	.menu {
+		float: left;
 	}
 }
 /*----- banner -----*/
@@ -101,9 +106,11 @@ table {
 	background-image: url(../images/banner.png);
 	width: 100%;
 	height: 300px;
+	margin-top: 10px;
 }
 .banner h1{
 	padding-top: 130px;
+	font-weight: bold;
 }
 .banner span{
 	color: #3D6C95;
@@ -122,7 +129,6 @@ table {
 	color: #fff;	
 	
 }
-
 .footer ul{
 	float: left;
 	padding-top: 10px;
@@ -131,34 +137,98 @@ table {
 	margin-right: 30px;
 	
 }	
-
 .footer li{	
 	font-size: 16px;
 	padding-bottom: 10px;
 }
-
 .footer img{
 	margin-top: 10px;
 }
 .content{
-	margin-top: 10px;
+	margin-top: 20px;
 	margin-bottom: 10px;
 }
 .content h2{
+	margin-top: 20px;
 	font-size: 24px;
 	text-align: center;
 	color:#3D6C95;
 	display: block;
+	margin-bottom: 20px
+}
+.content p{
+	width: 70%;
+	margin:0 auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	line-height: 150%;
+}
+.content p span{
+	color: #3D6C95;
+	font-size: 150%;
 }
 
+/*--- 嚴選菜單 ---*/
+.menu-list li{
+	border:1px solid #cfcecd;
+	margin: 1%;
+	float: left;
+    display: block;
+    max-width: 31%;
+    padding-top: 10px;
+    border-radius: 3px;
+}
+.menu-list li img{
+	margin-top: 10px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.dish {
+	display: inline-block;
+	font-size: 130%;
+	margin-left: 10px;
+}
 
+.price{
+	color: red;
+	font-size: 130%;
+	float: right;
+	margin-right: 10px;	
+	margin-bottom: 10px;
+}
+@media  (max-width:414px){
+	.menu-list ul{
+		max-width: 100%;
+		margin: 0 10px;
+	}
+	.menu-list li{
+		max-width: 90%;
+		margin: 0 auto;
+		margin: 1%;
+	}
+	.menu-list img{
+		max-width: 100%;
+		margin: 0 auto;	
+	}
+	.dish {
+		display: block;
+		float: left;
+	}
+	.price{
+		color: red;
+		font-size: 130%;
+		float: right;
+		margin-left: 10px;			
+	}
+}
 
+/*--- 首頁 ｜ 最新消息 ---*/
 .news{
 	margin: 0 auto;
 	border-collapse: collapse;
 	border-spacing: 0;
 	width: 60%;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 .news span{
 	color: red;
@@ -175,17 +245,17 @@ table {
 	padding: 10px 20px;
 	text-align: center;
 }
-.slogan{
-	padding-top: 10px;
-	padding-bottom: 10px;
-	max-width: 960px;
-}
+
+/*--- 首頁 ｜ 標語 ---*/
 .slogan li{
-	border:1px solid gray;
-	margin-left: 5px;
-	margin-right: 5px;
+	border:1px solid #cfcecd;
+	margin-left: 1%;
+	margin-right: 1%;
 	float: left;
-	display: block;
+	border-radius: 3px;
+    box-shadow: 0px 3px 3px #cfcecd;
+    display: block;
+    max-width: 31%;
 }
 .slogan h3{
 	font-size: 24px;
@@ -193,4 +263,66 @@ table {
 	color: #3D6C95;
 	text-align: center;
 	padding: 10px 0px;
+}
+.slogan img{
+	max-width: 100%;
+}
+
+
+@media  (max-width:414px){
+	.slogan ul{
+		max-width: 100%;
+	}
+	.slogan li{
+		max-width: 100%;
+		margin: 0 auto;
+	}
+}
+/*--- 聯絡我們 ｜ 地圖 ---*/
+.googlemap{
+	float: left;
+	margin-right: 20px;
+	max-width: 100%;
+
+}
+/*--- 聯絡我們 ｜ 留言 ---*/
+
+.formstyle{
+	border: none;
+  	border-radius: 3px;
+  	display: block;
+ 	padding: 5px 10px;
+  	font-size: 14px;
+  	margin-left: 10px;
+}
+label{
+	display: block;	
+  	font-size: 14px;	
+	color: #3D6C95;
+}
+
+input{
+	
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+textarea{
+	margin-top: 5px;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ .btn{
+  background: #3D6C95;
+  color:#fff;
+  
+  padding: 5px 20px;
+  cursor: pointer;
+  border-style: none;
+  border-radius: 3px;
+} 
+
+.btn:hover{
+  background: #D0E8FD;
+  color: #3D6C95
 }
